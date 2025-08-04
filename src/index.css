@@ -1,0 +1,57 @@
+:root {
+  --font-base: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bs-primary: #0b131e;
+  --bs-secondary: #ffffff;
+  --bs-success: #202b3b;
+  --bs-danger: #dc3545;
+  --fw-light: 300;
+  --fw-bold: 700;
+}
+body {
+  box-sizing: border-box;
+  font-family: var(--font-base);
+  background-color: var(--bs-primary);
+}
+h1 {
+  color: var(--bs-secondary);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: var(--fw-bold);
+}
+#cityList button {
+  cursor: pointer;
+}
+.is-invalid {
+  border-color: var(--bs-danger);
+}
+.invalid-feedback {
+  display: block;
+}
+#weatherIcon img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+section#weatherCard {
+  background-color: var(--bs-success);
+  border: none !important;
+  overflow: hidden;
+}
+.card-info {
+  background-color: var(--bs-success);
+  color: var(--bs-secondary);
+}
+.text-muted {
+  color: var(--bs-secondary) !important;
+}
+.temperature {
+  font-weight: var(--fw-light);
+  color: var(--bs-secondary);
+}
+.img-color {
+  filter: brightness(0) invert(1);
+}
+.reportTime {
+  color: var(--bs-secondary);
+  font-weight: var(--fw-bold);
+}
